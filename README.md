@@ -17,7 +17,6 @@
   * Bookmark url's, names and keys can be edited in `index.html`
   * Keys to open weather details and open on github are on lines *84-90* in `script.js`
 3. Enable developer mode in the `chrome://extensions/` page
-4. Click *Pack extension...* and choose the directory where all the files are, this will generate a `.crx` file
-5. Drag the `.crx` file into the `chrome://extensions/` page
+4. Click *Load unpacked extension...* and choose the directory where all the files aare
 
 ###Forked from [@pschfr](http://twitter.com/pschfr)/[pschfr](https://github.com/pschfr/start)

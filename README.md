@@ -9,6 +9,7 @@
 + Background is [What Space Really Looks Like](https://www.behance.net/gallery/12984019/What-Space-Really-Looks-Like)
 + Weather is from [monkeecreate/jquery.simpleWeather](https://github.com/monkeecreate/jquery.simpleWeather)
 + Keyboard navigation is from [ccampbell/mousetrap](https://github.com/ccampbell/mousetrap)!
++ Icon is [flat home icon](http://www.iconarchive.com/show/100-flat-icons-by-graphicloads/home-icon.html)
 
 ##Installation
 

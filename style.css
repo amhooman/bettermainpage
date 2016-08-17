@@ -3,7 +3,7 @@ html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 body {
 	/*background: url('https://source.unsplash.com/collection/292287/') no-repeat center center fixed;*/
-	background-image: url("space.jpg");
+	background-image: url("ripple.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center; 

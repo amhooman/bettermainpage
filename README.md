@@ -1,14 +1,30 @@
-# start [https://jibreil.github.io/start/](https://jibreil.github.io/start/)
-Personal new tab page with bookmarks, weather, quote, and image background.
+# startpage [https://jibreil.github.io/startpage/](https://jibreil.github.io/startpage/)
 
-![https://jibreil.github.io/start/](screenshot.png)
+![Screenshot](screenshot.png)
 
-The image is **What Space Really Looks Like** from [here](https://www.behance.net/gallery/12984019/What-Space-Really-Looks-Like), weather is from [monkeecreate/jquery.simpleWeather](https://github.com/monkeecreate/jquery.simpleWeather), and keyboard navigation is thanks to [ccampbell/mousetrap](https://github.com/ccampbell/mousetrap)!
+##My take on [pschfr's](https://github.com/pschfr/start) new tab page, includes bookmarks, weather, random quotes and a nice background
 
-Press the spacebar to refresh weather and quote. Each category is openable by keyboard and click, press escape to close all.
+##Contents
 
-In Chrome, you can go to Extensions and tick Developer mode, then drag-and-drop Start.crx into that window to have this as your new tab page. Magic!
++ Background is [What Space Really Looks Like](https://www.behance.net/gallery/12984019/What-Space-Really-Looks-Like)
++ Weather is from [monkeecreate/jquery.simpleWeather](https://github.com/monkeecreate/jquery.simpleWeather)
++ Keyboard navigation is from [ccampbell/mousetrap](https://github.com/ccampbell/mousetrap)!
 
-You could also use [New Tab Override for Firefox](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/), or [Custom New Tab Page for Opera](https://addons.opera.com/en/extensions/details/custom-new-tab-page/) to set this as your new tab page in those browsers.
+##Installation
 
-Forked from [@pschfr](http://twitter.com/pschfr)/[pschfr](https://github.com/pschfr/start)
+###As is
+
+1. Download just the `startpage.crx` file from the repo
+2. Drag it into the `chrome://extensions/` page
+
+###Customized
+
+1. Download/fork the repo
+2. Edit whatever you want
+  * Bookmark url's, names and keys can be edited in `index.html`
+  * Keys to open weather details and open on github are on lines *84-90* in `script.js`
+3. Enable developer mode in the `chrome://extensions/` page
+4. Click *Pack extension...* and choose the directory where all the files are, this will generate a `.crx` file
+5. Drag the `.crx` file into the `chrome://extensions/` page
+
+###Forked from [@pschfr](http://twitter.com/pschfr)/[pschfr](https://github.com/pschfr/start)

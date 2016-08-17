@@ -2,7 +2,7 @@
 
 ![Screenshot](screenshot.png)
 
-##My take on [pschfr's](https://github.com/pschfr/start) new tab page, includes bookmarks, weather, random quotes and a nice background
+##My take on [pschfr's](https://github.com/pschfr/start) new tab page, includes bookmarks, weather, random quotes and a nice background.
 
 ##Contents
 

@@ -12,13 +12,6 @@
 
 ##Installation
 
-###As is
-
-1. Download just the `startpage.crx` file from the repo
-2. Drag it into the `chrome://extensions/` page
-
-###Customized
-
 1. Download/fork the repo
 2. Edit whatever you want
   * Bookmark url's, names and keys can be edited in `index.html`

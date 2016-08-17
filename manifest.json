@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
 
-    "name": "My New Tab Page",
+    "name": "Jibreil - New Tab Page",
     "description": "This extension is my custom new tab page.",
-    "version": "4.2.0",
+    "version": "1.0",
 
     "permissions": [
         "geolocation"

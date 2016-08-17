@@ -1,7 +1,7 @@
-# start [https://pschfr.github.io/start/](https://pschfr.github.io/start/)
+# start [https://jibreil.github.io/start/](https://jibreil.github.io/start/)
 Personal new tab page with bookmarks, weather, quote, and image background.
 
-![https://pschfr.github.io/start/](screenshot.png)
+![https://jibreil.github.io/start/](screenshot.png)
 
 The background image randomizes on page load, as does the quote.
 
@@ -17,6 +17,4 @@ Browse similar style pages on [/r/startpages](https://reddit.com/r/startpages).
 
 BTW, it's super fast. DOMContentLoaded of ~225ms (~150ms as an extension!!) :D
 
-Feel free to fork, and add your own bookmarks and quotes!
-
-[@pschfr](http://twitter.com/pschfr)
+Forked from [@pschfr](http://twitter.com/pschfr)/[pschfr](https://github.com/pschfr/start)

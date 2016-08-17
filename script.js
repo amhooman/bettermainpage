@@ -34,9 +34,10 @@ function startTime() {
 function getWeather(location) {
 	$.simpleWeather({
 		location: location,
+		unit: 'c',
 		success: function(weather) {
 			$('.weather').html('In ' + weather.city + ', ' + weather.region + ', the weather is ' + weather.currently + ', the temperature is ' + weather.temp + '&deg;, and the wind is ' + weather.wind.speed + weather.units.speed + ' <span class="no-transform">' + weather.wind.direction + '</span>');
-			$('.weatherlink').html('<a href="' + weather.link + '">More details (w)</a>');
+			$('.weatherlink').html('<a href="' + weather.link + '">More details (m)</a>');
 		},
 		error: function(error)   {
 			$('.weather').html('Sorry, there has been a problem retrieving the weather information.');
@@ -81,7 +82,7 @@ function bindMousetraps() {
 		resetMousetraps();
 	});
 	// Binds Weather and GitHub links
-	Mousetrap.bind('w', function(e) {
+	Mousetrap.bind('m', function(e) {
 		window.location.href = $('.weatherlink').children().attr('href');
 	});
 	Mousetrap.bind('g', function(e) {

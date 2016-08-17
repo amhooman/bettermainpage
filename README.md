@@ -11,8 +11,4 @@ In Chrome, you can go to Extensions and tick Developer mode, then drag-and-drop 
 
 You could also use [New Tab Override for Firefox](https://addons.mozilla.org/en-US/firefox/addon/new-tab-override/), or [Custom New Tab Page for Opera](https://addons.opera.com/en/extensions/details/custom-new-tab-page/) to set this as your new tab page in those browsers.
 
-Browse similar style pages on [r/startpages](https://reddit.com/r/startpages).
-
-BTW, it's super fast. DOMContentLoaded of ~225ms (~150ms as an extension!!) :D
-
 Forked from [@pschfr](http://twitter.com/pschfr)/[pschfr](https://github.com/pschfr/start)

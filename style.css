@@ -1,92 +1,170 @@
 @charset "utf-8";
-html { box-sizing: border-box; }
-*, *:before, *:after { box-sizing: inherit; }
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
-	/*background: url('https://source.unsplash.com/collection/292287/') no-repeat center center fixed;*/
-	background-image: url("fade.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	text-transform: lowercase;
-	font-family: monospace;
-	font-size: 18px;
-	color: white;
+    /*background: url('https://source.unsplash.com/collection/292287/') no-repeat center center fixed;*/
+    background-image: url("fade.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-transform: lowercase;
+    font-family: monospace;
+    font-size: 18px;
+    color: white;
     padding: 0;
     margin: 0;
 }
+
 div#background {
-	position: absolute;
-	height: 100%;
-	width: 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
+
 div.centerWrapper {
-	transform: translateY(-50%);
-	position: absolute;
-	width: 40%;
-	left: 30%;
-	top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 50vw;
+    left: 25vw;
+    top: 50%;
 }
+
 div.timeDate {
-	font-size: xx-large;
-	padding: 0 15px 2.5rem;
+    font-size: xx-large;
+    padding: 0 15px 2.5rem;
 }
+
 ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
 ul.subMenu {
-	display: none;
-	width: 100%;
+    display: none;
+    width: 100%;
 }
+
 a {
-	transition: all 0.15s;
-	text-decoration: none;
-	display: block;
-	outline: none;
-	padding: 15px;
-	color: #333333;
+    transition: all 0.15s;
+    text-decoration: none;
+    display: block;
+    outline: none;
+    padding: 15px;
+    color: #333333;
 }
+
 a:after {
-	transition: all .15s;
-	content: "→";
-	opacity: 0;
+    transition: all .15s;
+    content: "→";
+    opacity: 0;
 }
+
 a:hover:after, a.active:after {
-	padding-left: 6px;
-	opacity: 1;
+    padding-left: 6px;
+    opacity: 1;
 }
-a.parent:after        { content: "↓"; }
-a.parent.active:after { content: "↑"; }
+
+a.parent:after {
+    content: "↓";
+}
+
+a.parent.active:after {
+    content: "↑";
+}
+
 p {
-	padding: 15px;
-	margin: 0;
+    padding: 15px;
+    margin: 0;
 }
+
 p.top, p.bottom {
-	position: absolute;
-	font-size: smaller;
-	width: 100%;
+    position: absolute;
+    font-size: smaller;
+    width: 100%;
 }
-p.top    { top:    0%; }
-p.bottom { bottom: 0%; }
+
+p.top {
+    top: 0%;
+}
+
+p.bottom {
+    bottom: 0%;
+}
+
 p a {
-	display: inline-block;
-	color: inherit;
-	padding: 0;
+    display: inline-block;
+    color: inherit;
+    padding: 0;
 }
-p a:after { display: none; }
-p a:hover { text-decoration: underline; }
-.clear { clear: both; }
-.left  { float: left; }
-.right { float: right; }
-.text-right { text-align: right; }
-div.right, div.left { width: 50%; }
-.no-transform { text-transform: none; }
-ul.box li a { background-color: rgba(255, 255, 255, 0.4); }
-ul li a:hover, ul li a.active, ul li a.active + ul.subMenu li a { background-color: rgba(255, 255, 255, 0.6); }
-.fadeIn { animation: fadeIn 0.75s 0.75s both ease-in; }
+
+p a:after {
+    display: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.clear {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-right {
+    text-align: right;
+}
+
+div.right, div.left {
+    width: 50%;
+}
+
+.no-transform {
+    text-transform: none;
+}
+
+ul.box li a {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+ul li a:hover, ul li a.active, ul li a.active+ ul.subMenu li a {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.fadeIn {
+    animation: fadeIn 0.75s 0.75s both ease-in;
+}
+
 @keyframes fadeIn {
-	from { opacity: 0; }
-	to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 700px) {
+    ul.box div.left, ul.box div.right, div.timeDate div#time, div.timeDate div#date {
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+    div.timeDate div {
+        padding-bottom: 1rem;
+    }
 }

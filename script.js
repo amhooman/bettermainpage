@@ -60,14 +60,14 @@ function loadStuff() {
 // Initializes keyboard nav
 function bindMousetraps() {
     $.each($('.parent'), function(i, val) {
-        Mousetrap.bind($(val).children('span').text(), function(e) {
+        Mousetrap.bind($(val).attr('data-key'), function(e) {
             $('a#' + $(val).attr('id')).toggleClass('active').next().slideToggle(150);
-            $.each($(val).parent().find('.tab span'), function(i, val) {
-                Mousetrap.bind($(val).text(), function(e) {
-                    window.location.href = $(val).parent().attr('href');
+            $.each($(val).parent().find('.tab'), function(i, val) {
+                Mousetrap.bind($(val).attr('data-key'), function(e) {
+                    window.location.href = $(val).attr('href');
                 });
             });
-            Mousetrap.bind($(val).children('span').text(), function(e) {
+            Mousetrap.bind($(val).attr('data-key'), function(e) {
                 resetMousetraps();
             });
         });
@@ -85,7 +85,7 @@ function bindMousetraps() {
     });
 }
 
-// Closes cells, rebinds keyboard shortcuts
+// Closes cells, rebinds keyboard keys
 function resetMousetraps() {
     $('.subMenu').slideUp(150);
     $('li a').removeClass('active');

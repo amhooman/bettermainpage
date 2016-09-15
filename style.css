@@ -8,8 +8,7 @@ html {
 }
 
 body {
-    /*background: url('https://source.unsplash.com/collection/292287/') no-repeat center center fixed;*/
-    background-image: url("fade.jpg");
+    background-image: url("heat.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -58,7 +57,7 @@ a {
     display: block;
     outline: none;
     padding: 15px;
-    color: #333333;
+    color: white;
 }
 
 a:hover, a:focus {
@@ -94,7 +93,7 @@ ul.box a[data-key]:after {
     float: right;
     content: attr(data-key);
     opacity: .75;
-    font: 75% monospace;
+    font: 95%/18px monospace;
     text-transform: lowercase;
 }
 
@@ -123,24 +122,21 @@ div.right, div.left {
 }
 
 ul.box li a {
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(255, 140, 140, .4);
 }
 
 ul li a:hover, ul li a.active, ul li a.active+ul.subMenu li a {
-    background-color: rgba(255, 255, 255, .6);
+    background-color: rgba(255, 140, 140, .6);
 }
 
 @media (max-width: 985px) {
-    ul.box div.left, ul.box div.right, div#time, div#date {
+    ul.box div.left, ul.box div.right, div.timeDate div {
         text-align: center;
         float: none;
         width: 100%;
     }
     div.timeDate div {
         padding-bottom: 15px;
-    }
-    a:after {
-        display: none;
     }
 }
 

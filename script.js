@@ -35,17 +35,13 @@ function getWeather(location) {
             $('.weatherlink').html('<a href="' + weather.link + '">More details (w)</a>');
         },
         error: function(error) {
-            $('.weather').html('Sorry, there has been a problem retrieving the weather information.');
+            $('.weather').html('Sorry, ' + error);
         }
     });
 }
 
-// Master loading function; appends random greeting, quote, and weather
-function loadStuff() {
-    var randNum = Math.floor((Math.random() * greets.length));
-    $('.greeting').html(greets[randNum]);
-    $('.quote').html('&ldquo;' + quotes[randNum] + '&rdquo; &mdash; ' + '<cite><small>' + quoted[randNum] + '</small></cite>');
-    // Geolocates the user, otherwise defaulting to Pittsburgh (2473224)
+// Geolocates the user, otherwise defaulting to Pittsburgh (2473224)
+function geolocWeather() {
     if ('geolocation' in navigator) {
         navigator.geolocation.getCurrentPosition(function(position) {
             getWeather(position.coords.latitude + ',' + position.coords.longitude);
@@ -55,6 +51,14 @@ function loadStuff() {
     } else {
         getWeather(2473224);
     }
+}
+
+// Master loading function; appends random greeting, quote, and weather
+function loadStuff() {
+    var randNum = Math.floor((Math.random() * greets.length));
+    $('.greeting').html(greets[randNum]);
+    $('.quote').html('&ldquo;' + quotes[randNum] + '&rdquo; &mdash; ' + '<cite><small>' + quoted[randNum] + '</small></cite>');
+    geolocWeather();
 }
 
 // Initializes keyboard nav
@@ -72,9 +76,17 @@ function bindMousetraps() {
             });
         });
     });
-    // Resets on ESC or spacebar
-    Mousetrap.bind(['esc', 'space'], function(e) {
+    // Resets on ESC
+    Mousetrap.bind('esc', function(e) {
         resetMousetraps();
+    });
+    // Resets and refreshes with spacebar, TODO: change background image too
+    Mousetrap.bind('space', function(e) {
+        resetMousetraps();
+        geolocWeather();
+
+        // This technically works, but the browser caches the response, keeping the same image :(
+        // $('body').css('background', "url('https://source.unsplash.com/collection/292287/') no-repeat center/cover fixed");
     });
     // Binds Weather and GitHub links
     Mousetrap.bind('w', function(e) {
@@ -85,7 +97,7 @@ function bindMousetraps() {
     });
 }
 
-// Closes cells, rebinds keyboard keys
+// Closes cells, rebinds keyboard shortcuts
 function resetMousetraps() {
     $('.subMenu').slideUp(150);
     $('li a').removeClass('active');

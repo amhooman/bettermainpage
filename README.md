@@ -1,4 +1,4 @@
-# Startpage [https://jibreil.github.io/startpage/](https://jibreil.github.io/startpage/)
+# [Startpage](https://jibreil.github.io/startpage/)
 
 ![Screenshot](screenshot.png)
 
@@ -20,4 +20,4 @@
 3. Enable developer mode in the `chrome://extensions/` page
 4. Click `Load unpacked extension...` and choose the directory where all the files are
 
-### Forked from [pschfr](https://github.com/pschfr/start)(https://github.com/pschfr/start)
+### Forked from [pschfr](https://github.com/pschfr/start)

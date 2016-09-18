@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-image: url("heat.jpg");
+    background: #CF2F3B url("heat.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;

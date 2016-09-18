@@ -32,7 +32,7 @@ function getWeather(location) {
         unit: 'c',
         success: function(weather) {
             $('.weather').html('In ' + weather.city + ', ' + weather.region + ', the weather is ' + weather.currently + ', the temperature is ' + weather.temp + '&deg;, and the wind is ' + weather.wind.speed + weather.units.speed + ' <span class="no-transform">' + weather.wind.direction + '</span>');
-            $('.weatherlink').html('<a href="' + weather.link + '">More details (w)</a>');
+            $('.weatherlink').html('<a target="_blank" href="' + weather.link + '">More details (w)</a>');
         },
         error: function(error) {
             $('.weather').html('Sorry, ' + error);

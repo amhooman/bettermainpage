@@ -17,6 +17,7 @@ body {
     font-family: monospace;
     font-size: 18px;
     animation: fadeIn .75s .75s both ease-in;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     color: white;
     margin: 0;
 }
@@ -41,6 +42,7 @@ div.timeDate div {
 }
 
 ul {
+    text-shadow: none;
     list-style: none;
     padding: 0;
     margin: 0;

@@ -14,7 +14,7 @@
 * Keyboard navigation is from [ccampbell/mousetrap](https://github.com/ccampbell/mousetrap)!
 * Icon is [flat home icon](http://www.iconarchive.com/show/100-flat-icons-by-graphicloads/home-icon.html)
 
-## Installation:
+## Installation (Chrome):
 
 1. Download/fork the repo
 2. Edit whatever you want

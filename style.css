@@ -7,6 +7,10 @@ html {
     box-sizing: inherit;
 }
 
+.box {
+    font-family: 'Space Mono', monospace;
+}
+
 body {
     background: #CF2F3B url("heat.jpg");
     background-repeat: no-repeat;
@@ -14,10 +18,10 @@ body {
     background-position: center;
     background-size: cover;
     text-transform: lowercase;
-    font-family: monospace;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     animation: fadeIn .75s .75s both ease-in;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
     color: white;
     margin: 0;
 }

@@ -92,7 +92,7 @@ function bindMousetraps() {
     Mousetrap.bind('w', function(e) {
         window.location.href = $('.weatherlink').children().attr('href');
     });
-    Mousetrap.bind('g', function(e) {
+    Mousetrap.bind('v', function(e) {
         window.location.href = $('.github').children().attr('href');
     });
 }

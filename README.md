@@ -1,4 +1,4 @@
-# [PStartpage](https://jibreil.github.io/pstartpage/)
+# [PStartpage](https://jibreil.xyz/pstartpage/)
 
 ![Screenshot](screenshot.png)
 

@@ -22,7 +22,7 @@ body {
     font-size: 18px;
     animation: fadeIn .75s both ease-in;
     /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); */
-    color: white;
+    color: black;
     margin: 0;
     overflow: hidden;
 }

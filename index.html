@@ -1,3 +1,5 @@
+
+  
 <!DOCTYPE HTML>
 <html lang="en-AU">
 
@@ -200,12 +202,23 @@ function KeyCheck(e){
 document.onkeydown = KeyCheck;
 --></script>
 	<div id="background"></div>
+	<p class="top"><span class="greeting"></span>! <span class="weather"></span><span class="weatherlink right"></span></p>
+	<div class="centerWrapper">
+		<div class="timeDate no-transform">
+			<div id="time" class="left"></div>
+			<div id="date" class="right text-right"></div>
+		</div>
 		<ul class="box">
 			<div class="left">
 				<li><a class="tab tab1" data-key="." href="http://swordslasher.com">home page</a>
 					<ul class="subMenu">
 						<li><a class="tab tab1" data-key="y" href="http://swordslasher.com">home page</a></li>
 					</ul>
+				</li>
+				<li><a id="parent2" class="parent" data-key="b" href="javascript:void(0)">/bin</a>
+					<ul class="subMenu">
+					</ul>
+				</li>
 				</li>
 			</div>
 			<div class="right">
@@ -217,7 +230,7 @@ document.onkeydown = KeyCheck;
 						<li><a class="tab tab4" data-key="c" href="https://amhooman.github.io/agoti-web-psych/">fnf agoti mod web psych engine</a></li>
 					</ul>
 				</li>
-				
+				</li>
 			</div>
 		</ul>
 		<div class="clear"></div>
